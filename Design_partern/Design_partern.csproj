@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{04A4CD70-2ECC-4ECC-B937-736DDD7BD55B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Design_partern</RootNamespace>
+    <AssemblyName>Design_partern</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractFactory2\Direction.cs" />
+    <Compile Include="AbstractFactory2\Door.cs" />
+    <Compile Include="AbstractFactory2\EnchantedMazeFactory.cs" />
+    <Compile Include="AbstractFactory2\MapSite.cs" />
+    <Compile Include="AbstractFactory2\Maze.cs" />
+    <Compile Include="AbstractFactory2\MazeFactory.cs" />
+    <Compile Include="AbstractFactory2\MazeGame.cs" />
+    <Compile Include="AbstractFactory2\Room.cs" />
+    <Compile Include="AbstractFactory2\Wall.cs" />
+    <Compile Include="BuilderPartern\Direction.cs" />
+    <Compile Include="BuilderPartern\Door.cs" />
+    <Compile Include="BuilderPartern\MapSite.cs" />
+    <Compile Include="BuilderPartern\Maze.cs" />
+    <Compile Include="BuilderPartern\MazeBuilder.cs" />
+    <Compile Include="BuilderPartern\Room.cs" />
+    <Compile Include="BuilderPartern\Wall.cs" />
+    <Compile Include="ButtonFactory.cs" />
+    <Compile Include="CreatorPartern\Direction.cs" />
+    <Compile Include="CreatorPartern\Door.cs" />
+    <Compile Include="CreatorPartern\MapSite.cs" />
+    <Compile Include="CreatorPartern\Maze.cs" />
+    <Compile Include="CreatorPartern\MazeGame.cs" />
+    <Compile Include="CreatorPartern\Room.cs" />
+    <Compile Include="CreatorPartern\Wall.cs" />
+    <Compile Include="GUIFactory.cs" />
+    <Compile Include="ImageButton.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundAngerImageButton.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buttonbase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
