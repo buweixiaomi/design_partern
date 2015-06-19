@@ -9,6 +9,7 @@ namespace Design_partern
     {
         static void Main(string[] args)
         {
+            int i = 10;
         }
     }
 }
