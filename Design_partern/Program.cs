@@ -9,7 +9,10 @@ namespace Design_partern
     {
         static void Main(string[] args)
         {
-            int i = 10;
+            Console.WriteLine("main start");
+            Singleton.Partern.Test3.GGG();
+            Singleton.Partern.Test3.GetInstance();
+            Console.Read();
         }
     }
 }
